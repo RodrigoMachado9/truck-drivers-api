@@ -14,11 +14,6 @@ class TipoVeiculoModel(banco.Model):
     veiculo_id = banco.Column(banco.Integer, banco.ForeignKey('veiculo.veiculo_id'))
 
 
-
-    #site_id = banco.Column(banco.Integer, banco.ForeignKey('sites.site_id'))
-    #site = banco.relationship('SiteModel')
-
-
     def __init__(self, documento,
                   modal, cargamin, cargamax, unidademedida, totaleixos, veiculo_id):
 

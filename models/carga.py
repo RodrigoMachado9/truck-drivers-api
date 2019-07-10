@@ -28,8 +28,7 @@ class CargaModel(banco.Model):
             'carga_id':self.carga_id,
             'categoria':self.categoria,
             'inflamavel':self.inflamavel,
-            #'local_carga_id':self.local_carga_id,
-            #'transporte_id':self.transporte_id
+
         }
 
 

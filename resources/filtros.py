@@ -1,3 +1,5 @@
+#todo; construir todo fluxo de fitros sobre determinados endpoints.
+
 def normalize_path_params(cidade=None,
                           estrelas_min = 0,
                           estrelas_max = 10,
@@ -24,12 +26,12 @@ def normalize_path_params(cidade=None,
 
 
 
-consulta_sem_cidade = "SELECT * FROM hoteis \
+consulta_sem_carga = "SELECT * FROM motoristas \
 WHERE (estrelas >= ? and estrelas <= ?) \
 and (diaria >= ? and diaria <= ?) \
 LIMIT ? OFFSET ?"
 
-consulta_com_cidade = "SELECT * FROM hoteis \
+consulta_com_carga = "SELECT * FROM motoristas \
 WHERE (estrelas >= ? and estrelas <= ?) \
 and (diaria >= ? and diaria <= ?) \
 and cidade = ? LIMIT ? OFFSET ?"

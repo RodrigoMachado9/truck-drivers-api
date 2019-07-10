@@ -1,18 +1,7 @@
 from flask_restful import Resource, reqparse
 from models.veiculo import VeiculoModel
-#from models.site import SiteModel
-#from resources.filtros import normalize_path_params, consulta_com_cidade, consulta_sem_cidade
 from flask_jwt_extended import jwt_required
 import sqlite3
-
-path_params = reqparse.RequestParser()
-path_params.add_argument('cidade', type=str)
-path_params.add_argument('estrelas_min', type=float)
-path_params.add_argument('estrelas_max', type=float)
-path_params.add_argument('diaria_min', type=float)
-path_params.add_argument('diaria_max', type=float)
-path_params.add_argument('limit', type=float)
-path_params.add_argument('offset', type=float)
 
 class Veiculos(Resource):
 
@@ -51,11 +40,6 @@ class Veiculo(Resource):
         dados = Veiculo.atributos.parse_args()
         veiculo = VeiculoModel(**dados)
 
-
-        """ composição
-        if not MotoristaModel.find_by_id(dados['site_id']):
-            return {'message': 'The hotel must be associated to a valid site id.'}, 400
-        """
         try:
             veiculo.save_veiculo()
         except:

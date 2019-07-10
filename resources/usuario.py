@@ -6,10 +6,6 @@ from flask_jwt_extended import create_access_token, jwt_required, get_raw_jwt
 from blacklist import BLACKLIST
 
 
-
-
-#reqparse  = recebe os elementos de uma determinada requisição
-
 #todo -> .:definindo atributos como variável global.:
 atributos = reqparse.RequestParser()
 atributos.add_argument('login', required=True, help="The field 'login' cannot be left ")
@@ -26,15 +22,14 @@ class User(Resource):
 
     @jwt_required   #todo -> será obrigatorio estar logado para deletar determinado usuario.
     def delete(self, user_id):
-        #global hoteis
-        #listcomprohension
+
         user = UserModel.find_user(user_id)
 
         if user:
             try:
                 user.delete_user()
             except:
-                return {'message': 'An internal error occured trying to delete hotel.'}, 500  # internal server error
+                return {'message': 'An internal error occured trying to delete user.'}, 500  # internal server error
             return {'message':'User deleted.'}
         return {'message':'User not found.'}, 404 # hotel não encontrado
 

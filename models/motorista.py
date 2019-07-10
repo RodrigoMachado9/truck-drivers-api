@@ -23,14 +23,9 @@ class MotoristaModel(banco.Model):
 
 
 
-
-
-    #site_id = banco.Column(banco.Integer, banco.ForeignKey('sites.site_id'))
-
     def __init__(self, nome, idade, rg, orgaoemissor, dataemissao,
                  datanascimento, sexo, cnh, cnhcategoria, possueveiculoproprio):
 
-        #self.id = id
         self.nome = nome
         self.idade = idade
         self.rg = rg
@@ -58,8 +53,7 @@ class MotoristaModel(banco.Model):
             'cnh_categoria':self.cnhcategoria,
             'possue_veiculo_proprio':self.possueveiculoproprio,
             'veiculos':[veiculo.json() for veiculo in self.veiculo],
-            'localcarga':[localcarga.json() for localcarga in self.localcarga],
-            #'transporte':[subscriptions.json() for subscriptions in self.subscriptions]
+            'localcarga':[localcarga.json() for localcarga in self.localcarga]
         }
 
 

@@ -24,9 +24,6 @@ class VeiculoModel(banco.Model):
     status = banco.relationship('StatusModel', backref='VeiculoModel', lazy='dynamic')
 
 
-    #site_id = banco.Column(banco.Integer, banco.ForeignKey('sites.site_id'))
-    #site = banco.relationship('SiteModel')
-
     def __init__(self, marca, modelo, placa, ano, cor, tipo_de_carroceria,
                  numero_de_pallets,cubagem_em_metros,caminhao_possue_rastreador,
                  tipo_rastreador, motorista_id):
@@ -67,7 +64,7 @@ class VeiculoModel(banco.Model):
     @classmethod
     def find_veiculo(cls, veiculo_id):
         # query, consulta o banco
-        veiculo = cls.query.filter_by(veiculo_id=veiculo_id).first() # SELECT * FROM motorista WHERE motorista_id=id LIMIT 1
+        veiculo = cls.query.filter_by(veiculo_id=veiculo_id).first() # SELECT * FROM veiculo WHERE veiculo_id=veiculo_id LIMIT 1
         if veiculo:
             return veiculo
         return None

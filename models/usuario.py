@@ -1,10 +1,10 @@
 from sql_alchemy import banco
 
-#todo modelo da minha classe hotel
+#todo; modelo da minha classe hotel
 class UserModel(banco.Model):
     __tablename__ = 'usuarios'
 
-    user_id = banco.Column(banco.Integer, primary_key = True) #todo id dinamico
+    user_id = banco.Column(banco.Integer, primary_key = True) #todo;  id dinamico
     login = banco.Column(banco.String(40))
     senha = banco.Column(banco.String(40))
 
@@ -32,7 +32,7 @@ class UserModel(banco.Model):
     def find_by_login(cls, login):
         # todo cls -> é  mesmo que chamar a classe
         # query, consulta o banco
-        user = cls.query.filter_by(login=login).first()  # SELECT * FROM hoteis WHERE hotel_id = hotel_id LIMIT 1
+        user = cls.query.filter_by(login=login).first()  # SELECT * FROM usuario WHERE usuario_id = usuario_id LIMIT 1
         if user:
             return user
         return None

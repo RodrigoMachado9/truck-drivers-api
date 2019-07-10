@@ -1,7 +1,6 @@
 from flask_restful import Resource, reqparse
 from models.motorista import MotoristaModel
-#from models.site import SiteModel
-from resources.filtros import normalize_path_params, consulta_com_cidade, consulta_sem_cidade
+from resources.filtros import normalize_path_params, consulta_com_carga, consulta_sem_carga
 from flask_jwt_extended import jwt_required
 import sqlite3
 
@@ -49,11 +48,6 @@ class Motorista(Resource):
         dados = Motorista.atributos.parse_args()
         motorista = MotoristaModel(**dados)
 
-
-        """ composição
-        if not MotoristaModel.find_by_id(dados['site_id']):
-            return {'message': 'The hotel must be associated to a valid site id.'}, 400
-        """
         try:
             motorista.save_motorista()
         except:
@@ -64,7 +58,6 @@ class Motorista(Resource):
     @jwt_required
     def put(self, motorista_id):
         dados = Motorista.atributos.parse_args()
-        #hotel = HotelModel(hotel_id, **dados)
         motorista = MotoristaModel(**dados) #todo; recebe os atributos da minha tabela.
 
         motorista_encontrado = MotoristaModel.find_motorista(motorista_id)

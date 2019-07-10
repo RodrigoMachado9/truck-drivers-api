@@ -18,7 +18,6 @@ class TransporteModel(banco.Model):
 
     def __init__(self, frete, incidente, local_carga_id):
 
-        #self.id = id
         self.frete = frete
         self.incidente = incidente
         self.local_carga_id = local_carga_id
