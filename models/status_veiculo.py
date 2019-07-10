@@ -38,6 +38,11 @@ class StatusModel(banco.Model):
             return status
         return None
 
+    def update_status(self, carregado, pesocarga, veiculo_id):
+        self.carregado = carregado
+        self.pesocarga = pesocarga
+        self.veiculo_id = veiculo_id
+
     def save_status(self):
         banco.session.add(self)
         banco.session.commit()

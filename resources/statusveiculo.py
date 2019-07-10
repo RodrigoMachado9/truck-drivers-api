@@ -39,6 +39,20 @@ class StatusVeiculo(Resource):
         return status.json(), 201
 
     @jwt_required
+    def put(self, status_id):
+        dados = StatusVeiculo.atributos.parse_args()
+        status = StatusModel(**dados)  # todo; recebe os atributos da minha tabela.
+
+        status_veiculo = StatusModel.find_status(status_id)
+        if status_veiculo:
+            status_veiculo.update_status(**dados)
+            status_veiculo.save_status()
+            return status_veiculo.json(), 200
+        status.save_status()
+        return status.json(), 201
+
+
+    @jwt_required
     def delete(self, status_id):
         status = StatusModel.find_status(status_id)
         if status:
