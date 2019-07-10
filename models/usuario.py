@@ -23,7 +23,7 @@ class UserModel(banco.Model):
     def find_user(cls, user_id):
         #todo cls -> é  mesmo que chamar a classe
         # query, consulta o banco
-        user = cls.query.filter_by(user_id=user_id).first() # SELECT * FROM hoteis WHERE hotel_id = hotel_id LIMIT 1
+        user = cls.query.filter_by(user_id=user_id).first() # SELECT * FROM usuario WHERE usuario_id = usuario_id LIMIT 1
         if user:
             return user
         return None
