@@ -108,16 +108,6 @@ api.add_resource(Transporte, '/transporte/<int:transporte_id>')
 
 
 
-"""
-
-#todo; endpoint 7
-api.add_resource(Sites, '/sites')
-
-#todo; endpoint 8
-api.add_resource(Site, '/sites/<string:url>')
-"""
-
-
 if __name__ == '__main__':
     #todo debug == true, apenas enquanto em desenvolvimento.
     from sql_alchemy import banco
