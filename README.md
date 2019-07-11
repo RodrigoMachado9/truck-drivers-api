@@ -1,9 +1,9 @@
 ----------------------------
 # Objetivo do projeto - tkpd-api caminhoneiros
 ----------------------------
-O objetivo desta API será melhorar a experiência do caminhoneiro sobre a utilização de determinados serviços.
+   O objetivo desta API será melhorar a experiência do caminhoneiro sobre a utilização de determinados serviços.
 Os serviços controlados por esta API consistem em:
-cadastro usuario, login, logout, cadastros de motoristas, cadastro de veiculos, alocação de um determinado tipo de veiculo,  alocação de cargas, alocaço de um determinado local, transporte de cargas, caminhoneiros sem carga, caminhoneiros com veiculo proprio, caminhoneiros sem carga para retornar ao seu ponto origem, caminhoneiros disponiveis,  top caminhoneiros.
+cadastro de usuario, login, logout, cadastros de motoristas, cadastro de veiculos, alocação de um determinado tipo de veiculo,  alocação de cargas, alocaço de um determinado local, transporte de cargas, caminhoneiros sem carga, caminhoneiros com veiculo proprio, caminhoneiros sem carga para retornar ao seu ponto origem, caminhoneiros disponiveis,  top caminhoneiros.
 
 
 
