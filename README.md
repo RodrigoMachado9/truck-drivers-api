@@ -30,7 +30,7 @@ realize o git clone do projeto
 ### quarto passo: requiremens.txt
 Na raiz do projeto instale as depedencias da API via terminal, conforme comando abaixo:
 ```bash
- pip install requirements.txt
+ pip install -r requirements.txt
 ```
 ### quinto passo: configurando variáveis
 Abra o terminal e digite os comandos abaixo.
@@ -63,8 +63,8 @@ Body -> raw -> Json
 ```
 ```json
 {
-   "login": "TRUCK",
-   "senha": "is life"
+   "login": "python",
+   "senha": "islife"
 }
 ```
 
@@ -87,7 +87,7 @@ Body -> raw -> Json
 }
 ```
 
-Apos gerar o post, o mesmo será necessário para o consumo dos serviços http - post, delete, put. Conforme exemplo abaixo:
+Após gerar o post, o mesmo será necessário para o consumo dos serviços http - post, delete, put. Conforme exemplo abaixo:
 
 
 ```bash
@@ -116,3 +116,530 @@ Body:
 	"possueveiculoproprio":"true"
 }
 ```
+
+----------------------------
+## Endpoints
+----------------------------
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/motoristas/local_carga/motoristas_sem_carga
+
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:
+{
+    "motoristas_sem_carga": [
+        {
+            "nome": "Fernando",
+            "sexo": "M",
+            "rg": "5151805151",
+            "origem": null
+        }
+    ]
+}
+```
+
+
+
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/motoristas/motoristas_com_veiculo_proprio
+
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:
+{
+    "caminhoneiros_com_veiculo_proprio": [
+        {
+            "total": 2
+        }
+    ]
+}
+```
+
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/motoristas/local_carga/veiculo/origem_destino
+
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:{
+    "caminhoneiros_origem_destino": [
+        {
+            "nome": "Fulano",
+            "origem": "São Paulo",
+            "destino": "Florianopolis",
+            "modal": "terrestre"
+        }
+    ]
+}
+```
+
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/motoristas/status_veiculo/motoristas_disponiveis
+
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:{
+{
+    "caminhoneiros_disponiveis": [
+        {
+            "nome": "Fulano",
+            "sexo": "M",
+            "idade": 25,
+            "cnhcategoria": "C",
+            "marca": "ferrari",
+            "tipo_de_carroceria": "aberto",
+            "rastreador": "true",
+            "modal": "terrestre",
+            "cargamin": 50,
+            "cargamax": 600
+        }
+    ]
+}
+```
+
+
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/motoristas/top_motoristas
+
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:{
+{
+    "top_caminhoneiros": [
+        {
+            "nome": "Fernando",
+            "avaliacao": "9.0"
+        }
+    ]
+}
+}
+```
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/motoristas
+
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:{
+{
+    "Motoristas": [
+        {
+            "motorista_id": 1,
+            "nome": "Fernando",
+            "idade": 25,
+            "rg": "5151805151",
+            "orgao_emissor": "SSP",
+            "data_emissao": "06.05.2000",
+            "data_nascimento": "06.05.1994",
+            "sexo": "M",
+            "cnh": "7777777",
+            "cnh_categoria": "C",
+            "possue_veiculo_proprio": "true",
+            "veiculos": [
+                {
+                    "veiculo_id": 1,
+                    "marca": "mercedes",
+                    "placa": "5151-4WF",
+                    "ano": "2018",
+                    "cor": "amarelo",
+                    "tipo_de_carroceria": "aberto/grande_baixa",
+                    "numero_de_pallets": "10",
+                    "cubagem_em_metros": "5",
+                    "caminhao_possue_rastreador": "true",
+                    "tipo_do_rastreador": "mega",
+                    "motorista_id": 1,
+                    "tipo_do_veiculo": [
+                        {
+                            "tipo_veiculo_id": 1,
+                            "documento": "DACTE",
+                            "modal": "terrestre",
+                            "carga_minima": 50,
+                            "carga_maxima": 600,
+                            "unidade_de_medida": "Kg",
+                            "total_de_eixos": "5",
+                            "veiculo_id": 1
+                        }
+                    ],
+                    "status_do_veiculo": [
+                        {
+                            "status_id": 1,
+                            "veiculo_carregado": "true",
+                            "peso_da_carga": "400",
+                            "veiculo_id": 1
+                        }
+                    ]
+                }
+            ],
+            "localcarga": []
+        },
+        {
+            "motorista_id": 2,
+            "nome": "Fulano",
+            "idade": 24,
+            "rg": "5151805151",
+            "orgao_emissor": "SSP",
+            "data_emissao": "06.05.2000",
+            "data_nascimento": "06.05.1995",
+            "sexo": "M",
+            "cnh": "5555",
+            "cnh_categoria": "C",
+            "possue_veiculo_proprio": "true",
+            "veiculos": [
+                {
+                    "veiculo_id": 2,
+                    "marca": "ferrari",
+                    "placa": "5151-4WF",
+                    "ano": "2019",
+                    "cor": "vermelha",
+                    "tipo_de_carroceria": "aberto",
+                    "numero_de_pallets": "10",
+                    "cubagem_em_metros": "5",
+                    "caminhao_possue_rastreador": "true",
+                    "tipo_do_rastreador": "mega",
+                    "motorista_id": 2,
+                    "tipo_do_veiculo": [
+                        {
+                            "tipo_veiculo_id": 2,
+                            "documento": "DACTE",
+                            "modal": "terrestre",
+                            "carga_minima": 50,
+                            "carga_maxima": 600,
+                            "unidade_de_medida": "Kg",
+                            "total_de_eixos": "5",
+                            "veiculo_id": 2
+                        }
+                    ],
+                    "status_do_veiculo": [
+                        {
+                            "status_id": 2,
+                            "veiculo_carregado": "false",
+                            "peso_da_carga": "400",
+                            "veiculo_id": 2
+                        }
+                    ]
+                }
+            ],
+            "localcarga": [
+                {
+                    "local_carga_id": 1,
+                    "endereco": "Rua do ator",
+                    "cidade": "São Paulo",
+                    "avaliacao": "9.0",
+                    "latitude": "60",
+                    "longitude": "58",
+                    "origem": "São Paulo",
+                    "destino": "Florianopolis",
+                    "motorista_id": 2,
+                    "transporte": [
+                        {
+                            "transporte_id": 1,
+                            "frete": "10.5",
+                            "incidente": "chuva forte e via lenta",
+                            "chegada": "2019-07-11",
+                            "carga": [
+                                {
+                                    "carga_id": 1,
+                                    "categoria": "pesada",
+                                    "inflamavel": "true"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+}
+```
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/cargas
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:{
+    "cargas": [
+        {
+            "carga_id": 1,
+            "categoria": "pesada",
+            "inflamavel": "true"
+        }
+    ]
+}
+```
+
+
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/transportes
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:{
+{
+    "transportes": [
+        {
+            "transporte_id": 1,
+            "frete": "10.5",
+            "incidente": "chuva forte e via lenta",
+            "carga": [
+                {
+                    "carga_id": 1,
+                    "categoria": "pesada",
+                    "inflamavel": "true"
+                }
+            ]
+        }
+    ]
+}
+}
+```
+
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/local_cargas
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:{
+    "local_cargas": [
+        {
+            "local_carga_id": 1,
+            "endereco": "Rua do ator",
+            "cidade": "São Paulo",
+            "avaliacao": "9.0",
+            "latitude": "60",
+            "longitude": "58",
+            "origem": "São Paulo",
+            "destino": "Florianopolis",
+            "motorista_id": 2,
+            "transporte": [
+                {
+                    "transporte_id": 1,
+                    "frete": "10.5",
+                    "incidente": "chuva forte e via lenta",
+                    "chegada": "2019-07-11",
+                    "carga": [
+                        {
+                            "carga_id": 1,
+                            "categoria": "pesada",
+                            "inflamavel": "true"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/status
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:{
+    "Status_veiculo": [
+        {
+            "status_id": 1,
+            "veiculo_carregado": "true",
+            "peso_da_carga": "400",
+            "veiculo_id": 1
+        }
+    ]
+}
+
+
+
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/tipo_veiculos
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:{
+    "tipo_veiculos": [
+        {
+            "tipo_veiculo_id": 1,
+            "documento": "DACTE",
+            "modal": "terrestre",
+            "carga_minima": 50,
+            "carga_maxima": 600,
+            "unidade_de_medida": "Kg",
+            "total_de_eixos": "5",
+            "veiculo_id": 1
+        },
+        {
+            "tipo_veiculo_id": 2,
+            "documento": "DACTE",
+            "modal": "terrestre",
+            "carga_minima": 50,
+            "carga_maxima": 600,
+            "unidade_de_medida": "Kg",
+            "total_de_eixos": "5",
+            "veiculo_id": 2
+        }
+    ]
+}
+
+
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/status
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:
+    "Status_veiculo": [
+        {
+            "status_id": 1,
+            "veiculo_carregado": "true",
+            "peso_da_carga": "400",
+            "veiculo_id": 1
+        }
+    ]
+}
+
+
+
+
+
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/status
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:
+    "Status_veiculo": [
+        {
+            "status_id": 1,
+            "veiculo_carregado": "true",
+            "peso_da_carga": "400",
+            "veiculo_id": 1
+        }
+    ]
+}
+
+
+
+
+```bash
+Endpoint:
+http://127.0.0.1:5000/usuarios
+Configuraçes do postman:
+Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+         VALUE: application/json }
+            
+Body[raw, Json]
+
+```
+```json
+Body:
+   {
+    "usuarios": [
+        {
+            "id": 1,
+            "login": "python"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
