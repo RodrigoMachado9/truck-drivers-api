@@ -210,7 +210,7 @@ Body[raw, Json]
 ```
 ```json
 Body:{
-{
+
     "caminhoneiros_disponiveis": [
         {
             "nome": "Fulano",
@@ -243,14 +243,14 @@ Body[raw, Json]
 ```
 ```json
 Body:{
-{
+
     "top_caminhoneiros": [
         {
             "nome": "Fernando",
             "avaliacao": "9.0"
         }
     ]
-}
+
 }
 ```
 
@@ -267,7 +267,7 @@ Body[raw, Json]
 ```
 ```json
 Body:{
-{
+
     "Motoristas": [
         {
             "motorista_id": 1,
