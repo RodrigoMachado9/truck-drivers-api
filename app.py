@@ -10,7 +10,7 @@ __credits__ = ["Python is life", "Live the opensource world"]
 from flask import Flask, jsonify
 from flask_restful import Api
 #todo; resources
-from resources.motorista import Motoristas, Motorista, MotoristasLocalCarga, CaminhoneirosVeiculoProprio, CaminhoneirosOrigemDestino, CaminhoneiroAvaliacao
+from resources.motorista import Motoristas, Motorista, MotoristasLocalCarga, CaminhoneirosVeiculoProprio, CaminhoneirosOrigemDestino, CaminhoneiroAvaliacao, CaminhoneirosDisponiveis
 
 from resources.usuario import User, UserRegister, UserLogin, UserLogout
 from resources.tipoveiculo import TipoVeiculos, TipoVeiculo
@@ -69,6 +69,9 @@ api.add_resource(CaminhoneirosOrigemDestino, '/motoristas/local_carga/veiculo/or
 
 #todo; [4] endpoint filter
 api.add_resource(CaminhoneiroAvaliacao, '/motoristas/top_motoristas')
+
+#todo; [5] endpoint filter
+api.add_resource(CaminhoneirosDisponiveis, '/motoristas/status_veiculo/motoristas_disponiveis')
 
 
 #todo; endpoint

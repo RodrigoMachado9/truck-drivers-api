@@ -9,9 +9,41 @@ __credits__ = ["Python is life", "Live the opensource world"]
 
 from flask_restful import Resource, reqparse
 from models.motorista import MotoristaModel
-from resources.filtros import motorista_sem_carga, caminhoneiro_possue_veiculo_proprio, listagem_origem_destino, top_caminhoneiros
+from resources.filtros import motorista_sem_carga, caminhoneiro_possue_veiculo_proprio, listagem_origem_destino, top_caminhoneiros, caminhoneiro_disponivel
 from flask_jwt_extended import jwt_required
 import sqlite3
+
+
+class CaminhoneirosDisponiveis(Resource):
+    """
+    Mostrar somentes determinados caminhoneiros disponiveis
+    """
+
+    def get(self):
+        connection = sqlite3.connect('case_truck.db')
+        cursor = connection.cursor()
+
+        # todo; top caminhoneiros
+        resultado = cursor.execute(caminhoneiro_disponivel)
+
+        caminhoneiros = []
+        for linha in resultado:
+            caminhoneiros.append({
+                'nome': linha[0],
+                'sexo': linha[1],
+                'idade': linha[2],
+                'cnhcategoria': linha[3],
+                'marca': linha[4],
+                'tipo_de_carroceria': linha[5],
+                'rastreador': linha[6],
+                'modal': linha[7],
+                'cargamin': linha[8],
+                'cargamax': linha[9]
+            })
+
+        return {'caminhoneiros_disponiveis': caminhoneiros}
+
+
 
 
 class CaminhoneiroAvaliacao(Resource):
@@ -76,7 +108,7 @@ class CaminhoneirosVeiculoProprio(Resource):
         caminhoneiros = []
         for linha in resultado:
             caminhoneiros.append({
-            'totalcaminhoneiros_possue_veiculo_proprio': linha[0]
+            'total': linha[0]
             })
 
         return {'caminhoneiros_com_veiculo_proprio': caminhoneiros}

@@ -64,3 +64,27 @@ top_caminhoneiros ="""SELECT
                         WHERE(
                         lc.avaliacao
                         >= 1 OR (lc.avaliacao <=10))"""
+
+
+#todo; /* caminhoneiros disponiveis para carga*/
+caminhoneiro_disponivel="""SELECT
+                                mo.nome nome,
+                                mo.sexo sexo,
+                                mo.idade idade,
+                                mo.cnhcategoria cnhcategoria,
+                                v.marca marca,
+                                v.tipo_de_carroceria tipo_de_carroceria,
+                                v.caminhao_possue_rastreador rastreador,
+                                tpv.modal modal,
+                                tpv.cargamin cargamin,
+                                tpv.cargamax cargamax
+                            FROM motoristas mo 
+                                LEFT JOIN local_carga lc ON lc.motorista_id = mo.motorista_id
+                                LEFT JOIN veiculo v ON v.motorista_id = mo.motorista_id
+                                LEFT JOIN tipo_veiculo tpv ON tpv.veiculo_id = v.veiculo_id
+                                INNER JOIN status_veiculo stv ON stv.veiculo_id = v.veiculo_id
+                            WHERE( 
+                                    stv.carregado='false' OR( stv.carregado != 'true'
+                                    OR(stv.carregado IS NULL 
+                                    OR(stv.carregado ='')))
+                                    )"""
