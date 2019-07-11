@@ -398,7 +398,6 @@ Body:{
 __Endpoint:__ http://127.0.0.1:5000/transportes   
 __Método:__ GET   
 Configuraçes do postman:  
-
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -467,11 +466,10 @@ Body:{
     ]
 }
 ```
-
-```bash
-Endpoint:
-http://127.0.0.1:5000/status
+__Endpoint:__ http://127.0.0.1:5000/status   
+__Método:__ GET   
 Configuraçes do postman:
+```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
             
@@ -491,19 +489,16 @@ Body:{
 }
 ```
 
-
-
-```bash
-Endpoint:
-http://127.0.0.1:5000/tipo_veiculos
+__Endpoint:__ http://127.0.0.1:5000/tipo_veiculos   
+__Método:__ GET   
 Configuraçes do postman:
+
+```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
             
 Body[raw, Json]
 
-```
-```json
 Body:{
     "tipo_veiculos": [
         {
@@ -530,18 +525,16 @@ Body:{
 }
 ```
 
-
-```bash
-Endpoint:
-http://127.0.0.1:5000/status
+__Endpoint:__ http://127.0.0.1:5000/status   
+__Método:__ GET   
 Configuraçes do postman:
+
+```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
             
 Body[raw, Json]
 
-```
-```json
 Body:
     "Status_veiculo": [
         {
@@ -555,17 +548,15 @@ Body:
 ```
 
 
-```bash
-Endpoint:
-http://127.0.0.1:5000/usuarios
+__Endpoint:__ http://127.0.0.1:5000/usuarios   
+__Método:__ GET   
 Configuraçes do postman:
+```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
             
 Body[raw, Json]
 
-```
-```json
 Body:
    {
     "usuarios": [
