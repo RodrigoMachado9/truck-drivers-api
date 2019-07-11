@@ -1,7 +1,17 @@
+__author__='RodrigoMachado'
+__license__ = "MIT"
+__version__ = "1.0.1"
+__status__ = "Production"
+__copyright__ = "Copyright 2019"
+__maintainer__ = "RodrigoMachado9"
+__email__ = "rodrigo.machado3.14@hotmail.com"
+__credits__ = ["Python is life", "Live the opensource world"]
+
 from flask import Flask, jsonify
 from flask_restful import Api
 #todo; resources
-from resources.motorista import Motoristas, Motorista
+from resources.motorista import Motoristas, Motorista, MotoristasLocalCarga, CaminhoneirosVeiculoProprio, CaminhoneirosOrigemDestino, CaminhoneiroAvaliacao
+
 from resources.usuario import User, UserRegister, UserLogin, UserLogout
 from resources.tipoveiculo import TipoVeiculos, TipoVeiculo
 from resources.veiculo import Veiculos, Veiculo
@@ -18,8 +28,6 @@ from flask_jwt_extended import JWTManager
 
 #todo guarda o token para futura verificação
 from blacklist import BLACKLIST
-
-
 
 
 #todo construindo um site para pesquisas sobre determinados hoteis! filtrando por determinados parametros.
@@ -48,6 +56,19 @@ def verifica_blacklist(token):
 @jwt.revoked_token_loader
 def token_de_acesso_invalidado():
     return jsonify({"message":"You have been logged out!"}), 401  # unauthorized
+
+
+#todo; [1] endpoint filter
+api.add_resource(MotoristasLocalCarga, '/motoristas/local_carga/motoristas_sem_carga')
+
+#todo; [2] endpoint filter
+api.add_resource(CaminhoneirosVeiculoProprio, '/motoristas/motoristas_com_veiculo_proprio')
+
+#todo; [3] endpoint filter
+api.add_resource(CaminhoneirosOrigemDestino, '/motoristas/local_carga/veiculo/origem_destino')
+
+#todo; [4] endpoint filter
+api.add_resource(CaminhoneiroAvaliacao, '/motoristas/top_motoristas')
 
 
 #todo; endpoint

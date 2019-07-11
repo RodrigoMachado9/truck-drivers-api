@@ -1,39 +1,11 @@
-#todo; construir todo fluxo de fitros sobre determinados endpoints.
-
-def normalize_path_params(cidade=None,
-                          estrelas_min = 0,
-                          estrelas_max = 10,
-                          diaria_min = 0,
-                          diaria_max = 10000,
-                          limit = 50,
-                          offset = 0, **dados):
-    if cidade:
-        return {
-            'estrelas_min': estrelas_min,
-            'estrelas_max': estrelas_max,
-            'diaria_min': diaria_min,
-            'diaria_max': diaria_max,
-            'cidade': cidade,
-            'limit': limit,
-            'offset': offset}
-    return {
-        'estrelas_min': estrelas_min,
-        'estrelas_max': estrelas_max,
-        'diaria_min': diaria_min,
-        'diaria_max': diaria_max,
-        'limit': limit,
-        'offset': offset}
-
-consulta_sem_carga = "SELECT * FROM motoristas \
-WHERE (estrelas >= ? and estrelas <= ?) \
-and (diaria >= ? and diaria <= ?) \
-LIMIT ? OFFSET ?"
-
-consulta_com_carga = "SELECT * FROM motoristas \
-WHERE (estrelas >= ? and estrelas <= ?) \
-and (diaria >= ? and diaria <= ?) \
-and cidade = ? LIMIT ? OFFSET ?"
-
+__author__='RodrigoMachado'
+__license__ = "MIT"
+__version__ = "1.0.1"
+__status__ = "Production"
+__copyright__ = "Copyright 2019"
+__maintainer__ = "RodrigoMachado9"
+__email__ = "rodrigo.machado3.14@hotmail.com"
+__credits__ = ["Python is life", "Live the opensource world"]
 
 #todo; /* origem e destino do caminhoneiro*/
 caminhoneiro_origem_destino ="""SELECT
@@ -49,7 +21,7 @@ caminhoneiro_origem_destino ="""SELECT
                                 AND ( lc.origem !=''  AND( lc.destino IS NOT NULL ) AND (lc.destino !=''))"""
 
 #todo;  /*motoristas que não possuem carga para voltar ao seu local de origem*/
-caminhoneiro_sem_carga ="""SELECT 
+motorista_sem_carga ="""SELECT 
                             mo.nome nome,
                             mo.sexo sexo,
                             mo.rg rg,
@@ -61,11 +33,12 @@ caminhoneiro_sem_carga ="""SELECT
                         OR (
                         lc.origem ='' )"""
 
-
 #todo; /* caminhoneiros com veiculo proprio*/
-caminhoneiro_possue_veiculo_proprio="""SELECT * FROM motoristas
-                                    WHERE possueveiculoproprio ='true'"""
-
+caminhoneiro_possue_veiculo_proprio="""SELECT COUNT(possueveiculoproprio) possueveiculoproprio
+                                        FROM motoristas
+                                        WHERE possueveiculoproprio='true' 
+                                        AND (possueveiculoproprio IS NOT NULL
+                                        AND(possueveiculoproprio !=''))"""
 
 #todo; /* listagem de origem e destino agrupado por tipos */
 listagem_origem_destino="""SELECT DISTINCT 
@@ -82,3 +55,12 @@ listagem_origem_destino="""SELECT DISTINCT
                             AND(lc.origem !='' AND(lc.destino IS NOT NULL) AND (lc.destino !=''))
                             GROUP BY modal
                             ORDER BY origem"""
+
+top_caminhoneiros ="""SELECT 
+                        mo.nome,
+                        lc.avaliacao
+                        FROM motoristas mo
+                        INNER JOIN local_carga lc ON lc.motorista_id = mo.motorista_id
+                        WHERE(
+                        lc.avaliacao
+                        >= 1 OR (lc.avaliacao <=10))"""

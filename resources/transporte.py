@@ -1,3 +1,12 @@
+__author__='RodrigoMachado'
+__license__ = "MIT"
+__version__ = "1.0.1"
+__status__ = "Production"
+__copyright__ = "Copyright 2019"
+__maintainer__ = "RodrigoMachado9"
+__email__ = "rodrigo.machado3.14@hotmail.com"
+__credits__ = ["Python is life", "Live the opensource world"]
+
 from flask_restful import Resource, reqparse
 from models.transporte import TransporteModel
 from flask_jwt_extended import jwt_required
@@ -9,12 +18,12 @@ class Transportes(Resource):
         #todo;  retornando uma lista de objetos.
         return {'transportes':[transporte.json() for transporte in TransporteModel.query.all()]}
 
-
 class Transporte(Resource):
 
     atributos = reqparse.RequestParser()
     atributos.add_argument('frete')
     atributos.add_argument('incidente')
+    atributos.add_argument('chegada')
     atributos.add_argument('local_carga_id', type=int, required=True, help="Every transporte needs to be linked local_carga.")
 
 

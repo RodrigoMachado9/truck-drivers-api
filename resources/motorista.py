@@ -1,17 +1,109 @@
+__author__='RodrigoMachado'
+__license__ = "MIT"
+__version__ = "1.0.1"
+__status__ = "Production"
+__copyright__ = "Copyright 2019"
+__maintainer__ = "RodrigoMachado9"
+__email__ = "rodrigo.machado3.14@hotmail.com"
+__credits__ = ["Python is life", "Live the opensource world"]
+
 from flask_restful import Resource, reqparse
 from models.motorista import MotoristaModel
-from resources.filtros import normalize_path_params, consulta_com_carga, consulta_sem_carga
+from resources.filtros import motorista_sem_carga, caminhoneiro_possue_veiculo_proprio, listagem_origem_destino, top_caminhoneiros
 from flask_jwt_extended import jwt_required
 import sqlite3
 
-path_params = reqparse.RequestParser()
-path_params.add_argument('cidade', type=str)
-path_params.add_argument('estrelas_min', type=float)
-path_params.add_argument('estrelas_max', type=float)
-path_params.add_argument('diaria_min', type=float)
-path_params.add_argument('diaria_max', type=float)
-path_params.add_argument('limit', type=float)
-path_params.add_argument('offset', type=float)
+
+class CaminhoneiroAvaliacao(Resource):
+    """
+    Mostrar os top 10 caminhoneiros.
+    """
+    def get(self):
+        connection = sqlite3.connect('case_truck.db')
+        cursor = connection.cursor()
+
+        # todo; top caminhoneiros
+        resultado = cursor.execute(top_caminhoneiros)
+
+        caminhoneiros = []
+        for linha in resultado:
+            caminhoneiros.append({
+                'nome': linha[0],
+                'avaliacao': linha[1]
+            })
+
+        if caminhoneiros[0]['avaliacao'] in (['10','10.0']):
+            return {'top_10':caminhoneiros}
+
+        return {'top_caminhoneiros': caminhoneiros}
+
+
+class CaminhoneirosOrigemDestino(Resource):
+    """
+    Mostrar uma lista de origem e destino agrupado por cada um dos tipos.
+    """
+    def get(self):
+        connection = sqlite3.connect('case_truck.db')
+        cursor = connection.cursor()
+
+        #todo; hehe
+        resultado = cursor.execute(listagem_origem_destino)
+
+        caminhoneiros = []
+        for linha in resultado:
+            caminhoneiros.append({
+            'nome': linha[0],
+            'origem': linha[1],
+            'destino': linha[2],
+            'modal': linha[3]
+            })
+
+        return {'caminhoneiros_origem_destino': caminhoneiros}
+
+
+
+class CaminhoneirosVeiculoProprio(Resource):
+    """
+    Precisamos saber quantos caminhoneiros tem veiculo próprio.
+    """
+    def get(self):
+        connection = sqlite3.connect('case_truck.db')
+        cursor = connection.cursor()
+
+        #todo; hehe
+        resultado = cursor.execute(caminhoneiro_possue_veiculo_proprio)
+
+        caminhoneiros = []
+        for linha in resultado:
+            caminhoneiros.append({
+            'totalcaminhoneiros_possue_veiculo_proprio': linha[0]
+            })
+
+        return {'caminhoneiros_com_veiculo_proprio': caminhoneiros}
+
+
+class MotoristasLocalCarga(Resource):
+    """
+    Precisamos de um método para consultar todos os motoristas
+    que não tem carga para voltar ao seu destino de origem
+    """
+    def get(self):
+        connection = sqlite3.connect('case_truck.db')
+        cursor = connection.cursor()
+
+        #todo; hehe
+        resultado = cursor.execute(motorista_sem_carga)
+
+        motoristas = []
+        for linha in resultado:
+            motoristas.append({
+            'nome': linha[0] ,
+            'sexo': linha[1],
+            'rg': linha[2],
+            'origem': linha[3],
+            })
+        return {'motoristas_sem_carga': motoristas}
+
 
 class Motoristas(Resource):
 
