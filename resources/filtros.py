@@ -24,8 +24,6 @@ def normalize_path_params(cidade=None,
         'limit': limit,
         'offset': offset}
 
-
-
 consulta_sem_carga = "SELECT * FROM motoristas \
 WHERE (estrelas >= ? and estrelas <= ?) \
 and (diaria >= ? and diaria <= ?) \
