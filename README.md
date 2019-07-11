@@ -3,7 +3,7 @@
 ----------------------------
    O objetivo desta API será melhorar a experiência do caminhoneiro sobre a utilização de determinados serviços.
 Os serviços controlados por esta API consistem em:
-cadastro de usuario, login, logout, cadastro de motoristas, cadastro de veiculos, alocação de um determinado tipo de veiculo,  alocação de cargas, alocaço de um determinado local, transporte de cargas, consulta de caminhoneiros sem carga,consulta de caminhoneiros com veiculo proprio,consulta de caminhoneiros sem carga para retornar ao seu ponto origem,consulta caminhoneiros disponiveis,  consulta dos top caminhoneiros.
+cadastro de usuario, login, logout, cadastro de motoristas, cadastro de veiculos, alocação de um determinado tipo de veiculo,  alocação de cargas, alocação de um determinado local, transporte de cargas, consulta de caminhoneiros sem carga,consulta de caminhoneiros com veiculo proprio,consulta de caminhoneiros sem carga para retornar ao seu ponto origem,consulta caminhoneiros disponiveis,  consulta dos top caminhoneiros.
 
 ----------------------------
 ## Instruções sobre o projeto
@@ -22,7 +22,7 @@ Ao acessar a`COLLECTION REST API TKPD` você terá acesso a documentação compl
 ### segundo passo: SO & IDE
 
 A IDE utilizada para o desenvolvimento deste projeto foi o pycharm, entretanto você poderá utilizar a IDE de sua preferencia. 
-url para o download, pycharm para SO Ubuntu: https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux&code=PCC
+url para o download, pycharm/Ubuntu: https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux&code=PCC
 
 ### terceiro passo: Git clone 
 realize o git clone do projeto 
