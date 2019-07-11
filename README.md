@@ -3,7 +3,7 @@
 ----------------------------
    O objetivo desta API será melhorar a experiência do caminhoneiro sobre a utilização de determinados serviços.
 Os serviços controlados por esta API consistem em:
-cadastro de usuario, login, logout, cadastro de motoristas, cadastro de veiculos, alocação de um determinado tipo de veiculo,  alocação de cargas, alocação de um determinado local, transporte de cargas, consulta de caminhoneiros sem carga,consulta de caminhoneiros com veiculo proprio,consulta de caminhoneiros sem carga para retornar ao seu ponto origem,consulta caminhoneiros disponiveis,  consulta dos top caminhoneiros.
+cadastro de usuario, login, logout, cadastro de motoristas, cadastro de veiculos, alocação de um determinado tipo de veiculo,  alocação de cargas, alocação de um determinado local, transporte de cargas, consulta de caminhoneiros sem carga,consulta de caminhoneiros com veiculo proprio,consulta de caminhoneiros sem carga para retornar ao seu ponto origem,consulta de caminhoneiros disponiveis,  consulta dos top caminhoneiros.
 
 ----------------------------
 ## Instruções sobre o projeto
