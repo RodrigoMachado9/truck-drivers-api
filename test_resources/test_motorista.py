@@ -9,6 +9,4 @@ __credits__ = ["Python is life"]
 __maintainer__ = "RodrigoMachado9"
 __email__ = ["rodrigo.machado3.14@hotmail.com", "https://www.linkedin.com/in/rodrigo-machado-6b0b33177"]
 
-
-
-
+#todo, testes concluidos via - Postman.
