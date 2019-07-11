@@ -9,15 +9,38 @@ __credits__ = ["Python is life", "Live the opensource world"]
 
 from flask_restful import Resource, reqparse
 from models.usuario import UserModel
+from resources.filtros import list_usuarios
 #todo para construç~ao e verificação do token....
 from werkzeug.security import safe_str_cmp
 from flask_jwt_extended import create_access_token, jwt_required, get_raw_jwt
 from blacklist import BLACKLIST
+import sqlite3
 
 #todo -> .:definindo atributos como variável global.:
 atributos = reqparse.RequestParser()
 atributos.add_argument('login', required=True, help="The field 'login' cannot be left ")
 atributos.add_argument('senha', required=True, help="The field 'senha' cannot be left ")
+
+class Users(Resource):
+    """
+        retorna todos os usuarios, contendo apenas determinados: id's e logins, será necessário para o teste do recurso.
+    """
+
+    def get(self):
+        connection = sqlite3.connect('case_truck.db')
+        cursor = connection.cursor()
+
+        # todo;
+        resultado = cursor.execute(list_usuarios)
+
+        usuarios = []
+        for linha in resultado:
+            usuarios.append({
+                'id': linha[0],
+                'login': linha[1]
+            })
+        return {'usuarios': usuarios}
+
 
 class User(Resource):
 
@@ -69,7 +92,6 @@ class UserLogin(Resource):
             token_de_acesso = create_access_token(identity=user.user_id)
             return {'access token':token_de_acesso}, 200
         return {'message':'The username or password is incorrect! '}, 401 #Unathorized!
-
 
 
 class UserLogout(Resource):

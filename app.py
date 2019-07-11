@@ -12,7 +12,7 @@ from flask_restful import Api
 #todo; resources
 from resources.motorista import Motoristas, Motorista, MotoristasLocalCarga, CaminhoneirosVeiculoProprio, CaminhoneirosOrigemDestino, CaminhoneiroAvaliacao, CaminhoneirosDisponiveis
 
-from resources.usuario import User, UserRegister, UserLogin, UserLogout
+from resources.usuario import User, UserRegister, UserLogin, UserLogout, Users
 from resources.tipoveiculo import TipoVeiculos, TipoVeiculo
 from resources.veiculo import Veiculos, Veiculo
 
@@ -81,6 +81,7 @@ api.add_resource(Motoristas, '/motoristas')
 api.add_resource(Motorista, '/motorista/<int:motorista_id>')
 
 #todo; endpoint 2
+api.add_resource(Users, '/usuarios')
 api.add_resource(User, '/usuarios/<int:user_id>')
 
 #todo; endpoint 3

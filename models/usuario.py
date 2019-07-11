@@ -9,6 +9,7 @@ __credits__ = ["Python is life", "Live the opensource world"]
 
 from sql_alchemy import banco
 
+
 #todo; modelo da minha classe hotel
 class UserModel(banco.Model):
     __tablename__ = 'usuarios'

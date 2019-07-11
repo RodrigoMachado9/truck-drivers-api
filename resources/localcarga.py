@@ -12,6 +12,7 @@ from models.local_carga import LocalCargaModel
 from flask_jwt_extended import jwt_required
 import sqlite3
 
+
 class LocalCargas(Resource):
 
     def get(self):

@@ -88,3 +88,9 @@ caminhoneiro_disponivel="""SELECT
                                     OR(stv.carregado IS NULL 
                                     OR(stv.carregado ='')))
                                     )"""
+
+list_usuarios="""SELECT 
+                    user.user_id id,
+                    user.login login
+                FROM usuarios user
+                WHERE user.login IS NOT NULL AND(user.login !='')"""
