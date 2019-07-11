@@ -435,7 +435,7 @@ Body[raw, Json]
 ```
 ```json
 Body:{
-{
+
     "transportes": [
         {
             "transporte_id": 1,
@@ -450,9 +450,9 @@ Body:{
             ]
         }
     ]
+
 }
-}
-```
+
 
 
 ```bash
