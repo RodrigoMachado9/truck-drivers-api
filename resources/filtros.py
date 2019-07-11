@@ -34,3 +34,51 @@ WHERE (estrelas >= ? and estrelas <= ?) \
 and (diaria >= ? and diaria <= ?) \
 and cidade = ? LIMIT ? OFFSET ?"
 
+
+#todo; /* origem e destino do caminhoneiro*/
+caminhoneiro_origem_destino ="""SELECT
+                                    mo.nome,
+                                    lc.origem,
+                                    lc.destino,
+                                    lc.latitude,
+                                    lc.longitude	
+                                FROM motoristas mo
+                                INNER JOIN local_carga lc ON lc.motorista_id = mo.motorista_id
+                                WHERE 
+                                lc.origem IS NOT NULL 
+                                AND ( lc.origem !=''  AND( lc.destino IS NOT NULL ) AND (lc.destino !=''))"""
+
+#todo;  /*motoristas que não possuem carga para voltar ao seu local de origem*/
+caminhoneiro_sem_carga ="""SELECT 
+                            mo.nome nome,
+                            mo.sexo sexo,
+                            mo.rg rg,
+                            lc.origem origem
+                        FROM motoristas mo
+                        LEFT JOIN local_carga lc ON lc.motorista_id = mo.motorista_id
+                        WHERE 
+                        lc.origem IS NULL 
+                        OR (
+                        lc.origem ='' )"""
+
+
+#todo; /* caminhoneiros com veiculo proprio*/
+caminhoneiro_possue_veiculo_proprio="""SELECT * FROM motoristas
+                                    WHERE possueveiculoproprio ='true'"""
+
+
+#todo; /* listagem de origem e destino agrupado por tipos */
+listagem_origem_destino="""SELECT DISTINCT 
+                                mo.nome nome,
+                                lc.origem origem,
+                                lc.destino destino,
+                                tpv.modal modal
+                            FROM motoristas mo
+                            INNER JOIN local_carga lc ON lc.motorista_id = mo.motorista_id
+                            LEFT JOIN veiculo v ON v.motorista_id = mo.motorista_id
+                            INNER JOIN tipo_veiculo tpv ON tpv.veiculo_id = v.veiculo_id
+                            WHERE 
+                            lc.origem IS NOT NULL 
+                            AND(lc.origem !='' AND(lc.destino IS NOT NULL) AND (lc.destino !=''))
+                            GROUP BY modal
+                            ORDER BY origem"""

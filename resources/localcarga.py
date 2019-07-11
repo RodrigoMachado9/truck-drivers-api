@@ -49,7 +49,7 @@ class LocalCarga(Resource):
 
     @jwt_required
     def delete(self, local_carga_id):
-        localcarga = LocalCargaModel.find_tipo_veiculo(local_carga_id)
+        localcarga = LocalCargaModel.find_local_carga(local_carga_id)
         if localcarga:
             localcarga.delete_local_carga()
             return {'message': 'Type local_carga deleted.'}
