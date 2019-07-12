@@ -11,7 +11,7 @@ cadastro de usuario, login, logout, cadastro de motoristas, cadastro de veiculos
 ### primeiro passo: instalação e criação da conta no postman
 
 Os testes referente aos endpoints foram construidos no `POSTMAN` contemplando todos os métodos `HTTP`.
-Portanto será necessário criar uma conta nos`POSTMAN`para melhor aproveitamento da `API`. 
+Portanto será necessário criar uma conta no`POSTMAN`para o melhor aproveitamento da `API`. 
 Seguindo o caminho `URL` abaixo,  você terá acesso as `COLLECTIONS` deste projeto.
 
 `URL Postman:`
@@ -55,7 +55,7 @@ https://web.postman.co/collections/7849675-0608a179-5123-440b-be44-650d306f2d16?
 O projeto contem um banco/exemplo com um determinado usuario configurado, entretando para a utilização da API, será necessário cadastrar um determinado usuário,  Conforme exemplo abaixo:
 
 __Endpoint:__ http://127.0.0.1:5000/cadastro   
-__Método:__ GET   
+__Método:__ POST   
 Configuraçes do postman:   
 
 ```json
