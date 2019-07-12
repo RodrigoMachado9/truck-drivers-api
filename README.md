@@ -24,8 +24,11 @@ Ao acessar a`COLLECTION REST API TKPD` você terá acesso a documentação compl
 A IDE utilizada para o desenvolvimento deste projeto foi o pycharm, entretanto você poderá utilizar a IDE de sua preferencia. 
 url para o download, pycharm/Ubuntu: https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux&code=PCC
 
-### terceiro passo: Git clone 
-realize o git clone do projeto 
+### terceiro passo: Git Clone 
+realize o git clone do projeto,
+```bash
+git clone https://github.com/RodrigoMachado9/tkpd-api.git
+```
 
 ### quarto passo: requiremens.txt
 Na raiz do projeto instale as depedencias da API via terminal, conforme comando abaixo:
