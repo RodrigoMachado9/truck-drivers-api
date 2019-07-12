@@ -61,7 +61,7 @@ O projeto contem um banco/exemplo com um determinado usuario configurado, entret
 
 __Endpoint:__ http://127.0.0.1:5000/cadastro   
 __Método:__ POST   
-Configuraçes do postman:   
+Configuraçôes do postman:   
 
 ```json
 Headers -> campo KEY: Content-Type, VALUE: application/json
@@ -79,7 +79,7 @@ Após o cadastro de um determinado usuário, será necessário realizar o login;
 
 __Endpoint:__ http://127.0.0.1:5000/login   
 __Método:__ GET   
-Configuraçes do postman:    
+Configuraçôes do postman:    
 ```json
 Headers -> campo KEY: Content-Type, VALUE: application/json
 Body -> raw -> Json
@@ -93,7 +93,7 @@ Após gerar o post, o mesmo será necessário para o consumo dos serviços http 
 
 __Endpoint:__ http://127.0.0.1:5000/motorista/1   
 __Método:__ GET    
-Configuraçes do postman:   
+Configuraçôes do postman:   
 
 ```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
@@ -122,7 +122,7 @@ Body:
 
 __Endpoint:__ http://127.0.0.1:5000/motoristas/local_carga/motoristas_sem_carga   
 __Método:__ GET   
-Configuraçes do postman:   
+Configuraçôes do postman:   
 ```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -146,7 +146,7 @@ Body:
 
 __Endpoint:__ http://127.0.0.1:5000/motoristas/motoristas_com_veiculo_proprio   
 __Método:__ GET   
-Configuraçes do postman:    
+Configuraçôes do postman:    
 ```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -166,7 +166,7 @@ Body:
 
 __Endpoint:__ http://127.0.0.1:5000/motoristas/local_carga/veiculo/origem_destino   
 __Método:__ GET   
-Configuraçes do postman:  
+Configuraçôes do postman:  
 
 ```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
@@ -188,7 +188,7 @@ Body:{
 
 __Endpoint:__ http://127.0.0.1:5000/motoristas/status_veiculo/motoristas_disponiveis   
 __Método:__ GET   
-Configuraçes do postman:
+Configuraçôes do postman:
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -216,7 +216,7 @@ Body:{
 
 __Endpoint:__ http://127.0.0.1:5000/motoristas/top_motoristas   
 __Método:__ GET   
-Configuraçes do postman:
+Configuraçôes do postman:
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -238,7 +238,7 @@ Body:{
 
 __Endpoint:__ http://127.0.0.1:5000/motoristas   
 __Método:__ GET   
-Configuraçes do postman:
+Configuraçôes do postman:
 ```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -382,7 +382,7 @@ Body:{
 
 __Endpoint:__ http://127.0.0.1:5000/cargas   
 __Método:__ GET   
-Configuraçes do postman:
+Configuraçôes do postman:
 ```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -402,7 +402,7 @@ Body:{
 
 __Endpoint:__ http://127.0.0.1:5000/transportes   
 __Método:__ GET   
-Configuraçes do postman:  
+Configuraçôes do postman:  
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -431,7 +431,7 @@ Body:{
 
 __Endpoint:__ http://127.0.0.1:5000/local_cargas   
 __Método:__ GET   
-Configuraçes do postman:
+Configuraçôes do postman:
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -473,7 +473,7 @@ Body:{
 ```
 __Endpoint:__ http://127.0.0.1:5000/status   
 __Método:__ GET   
-Configuraçes do postman:
+Configuraçôes do postman:
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -496,7 +496,7 @@ Body:{
 
 __Endpoint:__ http://127.0.0.1:5000/tipo_veiculos   
 __Método:__ GET   
-Configuraçes do postman:
+Configuraçôes do postman:
 
 ```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
@@ -532,7 +532,7 @@ Body:{
 
 __Endpoint:__ http://127.0.0.1:5000/status   
 __Método:__ GET   
-Configuraçes do postman:
+Configuraçôes do postman:
 
 ```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
@@ -555,7 +555,7 @@ Body:
 
 __Endpoint:__ http://127.0.0.1:5000/usuarios   
 __Método:__ GET   
-Configuraçes do postman:
+Configuraçôes do postman:
 ```json
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
