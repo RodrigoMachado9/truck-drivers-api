@@ -80,7 +80,7 @@ Após o cadastro de um determinado usuário, será necessário realizar o login;
 __Endpoint:__ http://127.0.0.1:5000/login   
 __Método:__ GET   
 Configuraçôes do postman:    
-```json
+```bash
 Headers -> campo KEY: Content-Type, VALUE: application/json
 Body -> raw -> Json
 
