@@ -223,7 +223,7 @@ Body:{
 }
 ```
 
-__Endpoint:__ http://127.0.0.1:5000/motoristas/drivers/top
+__Endpoint:__ http://127.0.0.1:5000/drivers/top
 __Method:__ GET   
 Postman settings:
 
@@ -489,7 +489,7 @@ Body:{
     ]
 }
 ```
-__Endpoint:__ http://127.0.0.1:5000/status   
+__Endpoint:__ http://127.0.0.1:5000/vehicles/status   
 __Método:__: GET
 Postman settings:
 
@@ -544,28 +544,6 @@ Body:{
             "measurement": "Kg",
             "total_axles": "5",
             "vehicle_id": 2
-        }
-    ]
-}
-```
-
-__Endpoint:__ http://127.0.0.1:5000/status   
-__Método:__: GET
-Postman settings:
-
-```bash
-Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
-         VALUE: application/json }
-            
-Body[raw, Json]
-
-Body:
-    "vehicle_status": [
-        {
-            "status_id": 1,
-            "vehicle_has_shipment": "true",
-            "shipping_weight": "400",
-            "vehicle_id": 1
         }
     ]
 }
