@@ -63,7 +63,7 @@ https://web.postman.co/collections/7849675-0608a179-5123-440b-be44-650d306f2d16?
 ----------------------------
 The project contains a bank/example with a specific user configured, however to use the API, it will be necessary to register a specific user, as shown in the example below:
 
-__Endpoint:__ http://127.0.0.1:5000/register   
+__Endpoint:__ http://127.0.0.1:5000/users/register
 __Method__: POST   
 Postman settings:
 
@@ -81,7 +81,7 @@ Body -> raw -> Json
 After registering a particular user, it will be necessary to login; The login endpoint will return a TOKEN to access HTTP services - POST, DELETE & PUT. as example below.
 
 
-__Endpoint:__ http://127.0.0.1:5000/login   
+__Endpoint:__ http://127.0.0.1:5000/users/token   
 __Method:__ GET   
 Postman settings:
 
