@@ -30,7 +30,6 @@ from flask_jwt_extended import JWTManager
 from blacklist import BLACKLIST
 
 
-#todo construindo um site para pesquisas sobre determinados hoteis! filtrando por determinados parametros.
 
 app = Flask(__name__)
 #todo sqlite -> é possivel alterar para postgres
