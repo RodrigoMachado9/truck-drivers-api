@@ -64,7 +64,7 @@ https://web.postman.co/collections/7849675-0608a179-5123-440b-be44-650d306f2d16?
 The project contains a bank/example with a specific user configured, however to use the API, it will be necessary to register a specific user, as shown in the example below:
 
 __Endpoint:__ http://127.0.0.1:5000/cadastro   
-__Método:__ POST   
+__Method__: POST   
 Postman settings:
 
 ```json
@@ -82,7 +82,7 @@ After registering a particular user, it will be necessary to login; The login en
 
 
 __Endpoint:__ http://127.0.0.1:5000/login   
-__Método:__ GET   
+__Method:__ GET   
 Postman settings:
 
 ```bash
@@ -97,7 +97,7 @@ Body -> raw -> Json
 After generating the post, it will be necessary for the consumption of http services - post, delete, put. As example below:
 
 __Endpoint:__ http://127.0.0.1:5000/motorista/1   
-__Método:__ GET    
+__Method:__ GET    
 Postman settings:
 
 ```bash
@@ -126,7 +126,7 @@ Body:
 ---
 
 __Endpoint:__ http://127.0.0.1:5000/motoristas/local_carga/motoristas_sem_carga   
-__Método:__ GET   
+__Method:__ GET   
 Postman settings:
 
 ```bash
