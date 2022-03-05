@@ -307,74 +307,74 @@ Body:{
             "load_location": []
         },
         {
-            "motorista_id": 2,
-            "nome": "Fulano",
-            "idade": 24,
+            "driver_id": 1008,
+            "name": "Fernando Souza",
+            "age": 24,
             "rg": "5151805151",
-            "orgao_emissor": "SSP",
-            "data_emissao": "06.05.2000",
-            "data_nascimento": "06.05.1995",
-            "sexo": "M",
+            "org_issuer": "SSP",
+            "issuance_date": "06.05.2000",
+            "birth_date": "06.05.1995",
+            "sex": "M",
             "cnh": "5555",
-            "cnh_categoria": "C",
-            "possue_veiculo_proprio": "true",
-            "veiculos": [
+            "cnh_category": "C",
+            "own_vehicle": "true",
+            "vehicles": [
                 {
-                    "veiculo_id": 2,
-                    "marca": "ferrari",
-                    "placa": "5151-4WF",
-                    "ano": "2019",
-                    "cor": "vermelha",
-                    "tipo_de_carroceria": "aberto",
-                    "numero_de_pallets": "10",
-                    "cubagem_em_metros": "5",
-                    "caminhao_possue_rastreador": "true",
-                    "tipo_do_rastreador": "mega",
-                    "motorista_id": 2,
-                    "tipo_do_veiculo": [
+                    "veicle_id": 2,
+                    "brand": "ferrari",
+                    "palte": "5151-4WF",
+                    "year": "2019",
+                    "color": "vermelha",
+                    "body_type": "aberto",
+                    "pallets_number": "10",
+                    "cubage_meters": "5",
+                    "truck_has_tracker": "true",
+                    "tracker_type": "mega",
+                    "driver_id": 1008,
+                    "vehicle_type": [
                         {
-                            "tipo_veiculo_id": 2,
-                            "documento": "DACTE",
+                            "vehicle_type_id": 2,
+                            "document": "DACTE",
                             "modal": "terrestre",
-                            "carga_minima": 50,
-                            "carga_maxima": 600,
-                            "unidade_de_medida": "Kg",
-                            "total_de_eixos": "5",
+                            "minimum_shipping": 50,
+                            "maximum_shipping": 600,
+                            "measurement": "Kg",
+                            "total_axles": "5",
                             "veiculo_id": 2
                         }
                     ],
-                    "status_do_veiculo": [
+                    "vehicle_status": [
                         {
                             "status_id": 2,
-                            "veiculo_carregado": "false",
-                            "peso_da_carga": "400",
-                            "veiculo_id": 2
+                            "vehicle_has_shipment": "false",
+                            "shipping_weight": "400",
+                            "vehicle_id": 2
                         }
                     ]
                 }
             ],
-            "localcarga": [
+            "load_location": [
                 {
-                    "local_carga_id": 1,
-                    "endereco": "Rua do ator",
-                    "cidade": "São Paulo",
-                    "avaliacao": "9.0",
+                    "load_location_id": 1,
+                    "adress": "Rua do ator",
+                    "city": "São Paulo",
+                    "evaluation": "9.0",
                     "latitude": "60",
                     "longitude": "58",
-                    "origem": "São Paulo",
-                    "destino": "Florianopolis",
-                    "motorista_id": 2,
-                    "transporte": [
+                    "origin": "São Paulo",
+                    "destination": "Florianopolis",
+                    "driver_id": 2,
+                    "transport": [
                         {
-                            "transporte_id": 1,
-                            "frete": "10.5",
-                            "incidente": "chuva forte e via lenta",
-                            "chegada": "2019-07-11",
-                            "carga": [
+                            "transport_id": 1,
+                            "freight": "10.5",
+                            "incident": "chuva forte e via lenta",
+                            "arrival": "2019-07-11",
+                            "shipments": [
                                 {
-                                    "carga_id": 1,
-                                    "categoria": "pesada",
-                                    "inflamavel": "true"
+                                    "shipment_id": 1,
+                                    "category": "pesada",
+                                    "flammable": "true"
                                 }
                             ]
                         }
@@ -389,8 +389,9 @@ Body:{
 
 
 __Endpoint:__ http://127.0.0.1:5000/cargas   
-__Método:__ GET   
-Configuraçôes do postman:
+Method: GET
+Postman settings:
+
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -398,19 +399,20 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
 Body[raw, Json]
 
 Body:{
-    "cargas": [
+    "shipments": [
         {
-            "carga_id": 1,
-            "categoria": "pesada",
-            "inflamavel": "true"
+            "shipment_id": 1,
+            "category": "pesada",
+            "flammable": "true"
         }
     ]
 }
 ```
 
 __Endpoint:__ http://127.0.0.1:5000/transportes   
-__Método:__ GET   
-Configuraçôes do postman:  
+Method: GET
+Postman settings:
+
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -419,16 +421,16 @@ Body[raw, Json]
 
 Body:{
 
-    "transportes": [
+    "transport": [
         {
-            "transporte_id": 1,
-            "frete": "10.5",
-            "incidente": "chuva forte e via lenta",
-            "carga": [
+            "transport_id": 1,
+            "freight": "10.5",
+            "incident": "chuva forte e via lenta",
+            "shipments": [
                 {
-                    "carga_id": 1,
-                    "categoria": "pesada",
-                    "inflamavel": "true"
+                    "shipment_id": 1,
+                    "category": "pesada",
+                    "flammable": "true"
                 }
             ]
         }
@@ -438,8 +440,8 @@ Body:{
 ```
 
 __Endpoint:__ http://127.0.0.1:5000/local_cargas   
-__Método:__ GET   
-Configuraçôes do postman:
+Method: GET
+Postman settings:
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -449,28 +451,28 @@ Body[raw, Json]
 ```
 ```json
 Body:{
-    "local_cargas": [
+    "load_location": [
         {
-            "local_carga_id": 1,
-            "endereco": "Rua do ator",
-            "cidade": "São Paulo",
-            "avaliacao": "9.0",
+            "location_id": 1,
+            "address": "Rua do ator",
+            "city": "São Paulo",
+            "evaluation": "9.0",
             "latitude": "60",
             "longitude": "58",
-            "origem": "São Paulo",
-            "destino": "Florianopolis",
-            "motorista_id": 2,
-            "transporte": [
+            "origin": "São Paulo",
+            "destination": "Florianopolis",
+            "driver_id": 2,
+            "transport": [
                 {
-                    "transporte_id": 1,
-                    "frete": "10.5",
-                    "incidente": "chuva forte e via lenta",
-                    "chegada": "2019-07-11",
-                    "carga": [
+                    "transport_id": 1,
+                    "freight": "10.5",
+                    "incident": "chuva forte e via lenta",
+                    "arrival": "2019-07-11",
+                    "shipments": [
                         {
-                            "carga_id": 1,
-                            "categoria": "pesada",
-                            "inflamavel": "true"
+                            "shipment_id": 1,
+                            "category": "pesada",
+                            "flammable": "true"
                         }
                     ]
                 }
@@ -480,8 +482,9 @@ Body:{
 }
 ```
 __Endpoint:__ http://127.0.0.1:5000/status   
-__Método:__ GET   
-Configuraçôes do postman:
+Method: GET
+Postman settings:
+
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -491,20 +494,20 @@ Body[raw, Json]
 ```
 ```json
 Body:{
-    "Status_veiculo": [
+    "vehicle_status": [
         {
             "status_id": 1,
-            "veiculo_carregado": "true",
-            "peso_da_carga": "400",
-            "veiculo_id": 1
+            "vehicle_has_shipment": "true",
+            "shipping_weight": "400",
+            "vehicle_id": 1
         }
     ]
 }
 ```
 
 __Endpoint:__ http://127.0.0.1:5000/tipo_veiculos   
-__Método:__ GET   
-Configuraçôes do postman:
+Method: GET
+Postman settings:
 
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
@@ -513,34 +516,34 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
 Body[raw, Json]
 
 Body:{
-    "tipo_veiculos": [
+    "vehicle_type": [
         {
-            "tipo_veiculo_id": 1,
-            "documento": "DACTE",
+            "vehicle_type_id": 1,
+            "document": "DACTE",
             "modal": "terrestre",
-            "carga_minima": 50,
-            "carga_maxima": 600,
-            "unidade_de_medida": "Kg",
-            "total_de_eixos": "5",
-            "veiculo_id": 1
+            "minimum_shipping": 50,
+            "maximum_shipping": 600,
+            "measurement": "Kg",
+            "total_axles": "5",
+            "vehicle_id": 1
         },
         {
-            "tipo_veiculo_id": 2,
-            "documento": "DACTE",
+            "vehicle_type_id": 2,
+            "document": "DACTE",
             "modal": "terrestre",
-            "carga_minima": 50,
-            "carga_maxima": 600,
-            "unidade_de_medida": "Kg",
-            "total_de_eixos": "5",
-            "veiculo_id": 2
+            "minimum_shipping": 50,
+            "maximum_shipping": 600,
+            "measurement": "Kg",
+            "total_axles": "5",
+            "vehicle_id": 2
         }
     ]
 }
 ```
 
 __Endpoint:__ http://127.0.0.1:5000/status   
-__Método:__ GET   
-Configuraçôes do postman:
+Method: GET
+Postman settings:
 
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
@@ -549,12 +552,12 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
 Body[raw, Json]
 
 Body:
-    "Status_veiculo": [
+    "vehicle_status": [
         {
             "status_id": 1,
-            "veiculo_carregado": "true",
-            "peso_da_carga": "400",
-            "veiculo_id": 1
+            "vehicle_has_shipment": "true",
+            "shipping_weight": "400",
+            "vehicle_id": 1
         }
     ]
 }
@@ -562,8 +565,9 @@ Body:
 
 
 __Endpoint:__ http://127.0.0.1:5000/usuarios   
-__Método:__ GET   
-Configuraçôes do postman:
+Method: GET
+Postman settings:
+
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -572,10 +576,10 @@ Body[raw, Json]
 
 Body:
    {
-    "usuarios": [
+    "users": [
         {
             "id": 1,
-            "login": "python"
+            "user": "python"
         }
     ]
 }
