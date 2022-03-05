@@ -59,7 +59,7 @@ https://web.postman.co/collections/7849675-0608a179-5123-440b-be44-650d306f2d16?
 
 
 ----------------------------
-## Rules for using the api
+## Rules
 ----------------------------
 The project contains a bank/example with a specific user configured, however to use the API, it will be necessary to register a specific user, as shown in the example below:
 
