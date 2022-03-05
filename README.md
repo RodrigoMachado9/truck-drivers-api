@@ -223,7 +223,7 @@ Body:{
 }
 ```
 
-__Endpoint:__ http://127.0.0.1:5000/drivers/top
+__Endpoint:__ http://127.0.0.1:5000/drivers/top-drivers
 __Method:__ GET   
 Postman settings:
 
