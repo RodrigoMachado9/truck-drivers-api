@@ -84,6 +84,7 @@ After registering a particular user, it will be necessary to login; The login en
 __Endpoint:__ http://127.0.0.1:5000/login   
 __Método:__ GET   
 Postman settings:
+
 ```bash
 Headers -> field KEY: Content-Type, VALUE: application/json
 Body -> raw -> Json
@@ -107,7 +108,7 @@ Body[raw, Json]
 
 Body:
 {
-   "nome": "Fulano",
+        "name": "Fulano",
 	"age": 25,
 	"rg": "5151805151",
 	"org_issuer": "SSP",
@@ -127,6 +128,7 @@ Body:
 __Endpoint:__ http://127.0.0.1:5000/motoristas/local_carga/motoristas_sem_carga   
 __Método:__ GET   
 Postman settings:
+
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -151,6 +153,7 @@ Body:
 __Endpoint:__ http://127.0.0.1:5000/motoristas/motoristas_com_veiculo_proprio   
 __Method:__ GET   
 Postman settings:
+
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -193,6 +196,7 @@ Body:{
 __Endpoint:__ http://127.0.0.1:5000/motoristas/status_veiculo/motoristas_disponiveis   
 __Method:__ GET   
 Postman settings:
+
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -221,6 +225,7 @@ Body:{
 __Endpoint:__ http://127.0.0.1:5000/motoristas/top_motoristas   
 __Method:__ GET   
 Postman settings:
+
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -232,11 +237,11 @@ Body:{
     "top_truckers": [
         {
             "name": "Fernando Souza",
-            "avaliacao": "9.0"
+            "evaluation": "9.0"
         },
 	{
             "name": "Marcos Araujo Sobrinho",
-            "avaliacao": "9.0"
+            "evaluation": "9.0"
         }
     ]
 
@@ -247,6 +252,7 @@ Body:{
 __Endpoint:__ http://127.0.0.1:5000/motoristas   
 __Method:__ GET   
 Postman settings:
+
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -322,7 +328,7 @@ Body:{
                 {
                     "veicle_id": 2,
                     "brand": "ferrari",
-                    "palte": "5151-4WF",
+                    "plate": "5151-4WF",
                     "year": "2019",
                     "color": "vermelha",
                     "body_type": "aberto",
@@ -340,7 +346,7 @@ Body:{
                             "maximum_shipping": 600,
                             "measurement": "Kg",
                             "total_axles": "5",
-                            "veiculo_id": 2
+                            "vehicle_id": 2
                         }
                     ],
                     "vehicle_status": [
@@ -389,7 +395,7 @@ Body:{
 
 
 __Endpoint:__ http://127.0.0.1:5000/cargas   
-Method: GET
+__Método:__: GET
 Postman settings:
 
 ```bash
@@ -410,7 +416,7 @@ Body:{
 ```
 
 __Endpoint:__ http://127.0.0.1:5000/transportes   
-Method: GET
+__Método:__: GET
 Postman settings:
 
 ```bash
@@ -440,8 +446,9 @@ Body:{
 ```
 
 __Endpoint:__ http://127.0.0.1:5000/local_cargas   
-Method: GET
+__Método:__: GET
 Postman settings:
+
 ```bash
 Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
@@ -482,7 +489,7 @@ Body:{
 }
 ```
 __Endpoint:__ http://127.0.0.1:5000/status   
-Method: GET
+__Método:__: GET
 Postman settings:
 
 ```bash
@@ -506,7 +513,7 @@ Body:{
 ```
 
 __Endpoint:__ http://127.0.0.1:5000/tipo_veiculos   
-Method: GET
+__Método:__: GET
 Postman settings:
 
 ```bash
@@ -542,7 +549,7 @@ Body:{
 ```
 
 __Endpoint:__ http://127.0.0.1:5000/status   
-Method: GET
+__Método:__: GET
 Postman settings:
 
 ```bash
@@ -565,7 +572,7 @@ Body:
 
 
 __Endpoint:__ http://127.0.0.1:5000/usuarios   
-Method: GET
+__Método:__: GET
 Postman settings:
 
 ```bash
