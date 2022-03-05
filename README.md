@@ -1,5 +1,5 @@
 ----------------------------
-# API OBJECTIVE - TRUCKERS tkpd-api
+# API OBJECTIVE - TRUCK DRIVERS tkpd-api
 ----------------------------
    The purpose of this API will be to improve the truck driver's experience when using certain services.
 The services controlled by this API consist of:
