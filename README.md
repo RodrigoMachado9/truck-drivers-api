@@ -1,12 +1,12 @@
 ----------------------------
-# Project objective - truckers tkpd-api
+# API objective - truckers tkpd-api
 ----------------------------
    The purpose of this API will be to improve the truck driver's experience when using certain services.
 The services controlled by this API consist of:
 user registration, login, logout, drivers registration, vehicle registration, allocation of a certain type of vehicle, allocation of loads, allocation of a certain location, transportation of loads, consultation of truck drivers without load, consultation of truck drivers with their own vehicle , consultation of truck drivers without load to return to their point of origin, consultation of available truck drivers, consultation of the top truck drivers.
 
 ----------------------------
-## Project instructions
+## Instructions
 ----------------------------
 ### First step: installation and account creation in postman
 
