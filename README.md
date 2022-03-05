@@ -63,7 +63,7 @@ https://web.postman.co/collections/7849675-0608a179-5123-440b-be44-650d306f2d16?
 ----------------------------
 The project contains a bank/example with a specific user configured, however to use the API, it will be necessary to register a specific user, as shown in the example below:
 
-__Endpoint:__ http://127.0.0.1:5000/cadastro   
+__Endpoint:__ http://127.0.0.1:5000/register   
 __Method__: POST   
 Postman settings:
 
@@ -72,7 +72,7 @@ Headers -> field KEY: Content-Type, VALUE: application/json
 Body -> raw -> Json
 
 {
-   "user": "python",
+   "user": "RodrigoMachado9",
    "password": "islife"
 }
 ```
@@ -96,7 +96,7 @@ Body -> raw -> Json
 
 After generating the post, it will be necessary for the consumption of http services - post, delete, put. As example below:
 
-__Endpoint:__ http://127.0.0.1:5000/motorista/1   
+__Endpoint:__ http://127.0.0.1:5000/drivers/1   
 __Method:__ GET    
 Postman settings:
 
@@ -108,6 +108,7 @@ Body[raw, Json]
 
 Body:
 {
+	"driver_id": 1,
         "name": "Fulano",
 	"age": 25,
 	"rg": "5151805151",
@@ -125,7 +126,7 @@ Body:
 ## Endpoints
 ---
 
-__Endpoint:__ http://127.0.0.1:5000/motoristas/local_carga/motoristas_sem_carga   
+__Endpoint:__ http://127.0.0.1:5000/divers/without-shipments
 __Method:__ GET   
 Postman settings:
 
@@ -150,7 +151,7 @@ Body:
 ```
 
 
-__Endpoint:__ http://127.0.0.1:5000/motoristas/motoristas_com_veiculo_proprio   
+__Endpoint:__ http://127.0.0.1:5000/drivers/own-vehicles
 __Method:__ GET   
 Postman settings:
 
@@ -171,7 +172,7 @@ Body:
 ```
 
 
-__Endpoint:__ http://127.0.0.1:5000/motoristas/local_carga/veiculo/origem_destino   
+__Endpoint:__ http://127.0.0.1:5000/drivers/location
 __Method:__ GET   
 Postman settings:
 
@@ -193,7 +194,7 @@ Body:{
 }
 ```
 
-__Endpoint:__ http://127.0.0.1:5000/motoristas/status_veiculo/motoristas_disponiveis   
+__Endpoint:__ http://127.0.0.1:5000/drivers/availables
 __Method:__ GET   
 Postman settings:
 
@@ -222,7 +223,7 @@ Body:{
 }
 ```
 
-__Endpoint:__ http://127.0.0.1:5000/motoristas/top_motoristas   
+__Endpoint:__ http://127.0.0.1:5000/motoristas/drivers/top
 __Method:__ GET   
 Postman settings:
 
@@ -249,7 +250,7 @@ Body:{
 ```
 
 
-__Endpoint:__ http://127.0.0.1:5000/motoristas   
+__Endpoint:__ http://127.0.0.1:5000/drivers   
 __Method:__ GET   
 Postman settings:
 
@@ -394,7 +395,7 @@ Body:{
 ```
 
 
-__Endpoint:__ http://127.0.0.1:5000/cargas   
+__Endpoint:__ http://127.0.0.1:5000/shipments   
 __Método:__: GET
 Postman settings:
 
@@ -415,7 +416,7 @@ Body:{
 }
 ```
 
-__Endpoint:__ http://127.0.0.1:5000/transportes   
+__Endpoint:__ http://127.0.0.1:5000/shipments/transports
 __Método:__: GET
 Postman settings:
 
@@ -445,7 +446,7 @@ Body:{
 }
 ```
 
-__Endpoint:__ http://127.0.0.1:5000/local_cargas   
+__Endpoint:__ http://127.0.0.1:5000/shipments/locations
 __Método:__: GET
 Postman settings:
 
@@ -512,7 +513,7 @@ Body:{
 }
 ```
 
-__Endpoint:__ http://127.0.0.1:5000/tipo_veiculos   
+__Endpoint:__ http://127.0.0.1:5000/vehicles/types
 __Método:__: GET
 Postman settings:
 
@@ -571,7 +572,7 @@ Body:
 ```
 
 
-__Endpoint:__ http://127.0.0.1:5000/usuarios   
+__Endpoint:__ http://127.0.0.1:5000/users   
 __Método:__: GET
 Postman settings:
 
@@ -586,7 +587,7 @@ Body:
     "users": [
         {
             "id": 1,
-            "user": "python"
+            "user": "RodrigoMachado9"
         }
     ]
 }
