@@ -73,7 +73,7 @@ Body -> raw -> Json
 
 {
    "user": "RodrigoMachado9",
-   "password": "islife"
+   "password": "5842cadc-9cec-11ec-b44a-4f8d45fa2b75"
 }
 ```
 
