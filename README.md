@@ -185,7 +185,7 @@ Body[raw, Json]
 Body:{
     "truck_drivers_origin_destination": [
         {
-            "name": "Rodrigo J Machado",
+            "name": "Rodrigo Machado",
             "origin": "São Paulo",
             "destination": "Florianopolis",
             "modal": "terrestre"
