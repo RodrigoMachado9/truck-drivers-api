@@ -141,7 +141,7 @@ Body:
 {
     "driver_without_shipments": [
         {
-            "name": "Fernando",
+            "name": "Fulano",
             "sex": "M",
             "rg": "5151805151",
             "origin": null
@@ -208,7 +208,7 @@ Body:{
 
     "available_truck_drivers": [
         {
-            "name": "Marcos Araujo Sobrinho",
+            "name": "Fulano",
             "sex": "M",
             "age": 25,
             "cnh_category": "C",
@@ -237,11 +237,11 @@ Body:{
 
     "top_truckers": [
         {
-            "name": "Fernando Souza",
+            "name": "Fulano",
             "evaluation": "9.0"
         },
 	{
-            "name": "Marcos Araujo Sobrinho",
+            "name": "Other Fulano",
             "evaluation": "9.0"
         }
     ]
@@ -266,7 +266,7 @@ Body:{
     "truck_drivers": [
         {
             "driver_id": 1007,
-            "name": "Marcos Araujo Sobrinho",
+            "name": "Fulano",
             "age": 25,
             "rg": "5151805151",
             "org_issuer": "SSP",
@@ -315,7 +315,7 @@ Body:{
         },
         {
             "driver_id": 1008,
-            "name": "Fernando Souza",
+            "name": "Other Fulano",
             "age": 24,
             "rg": "5151805151",
             "org_issuer": "SSP",
