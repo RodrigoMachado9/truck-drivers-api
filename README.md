@@ -1,5 +1,5 @@
 ----------------------------
-# API OBJECTIVE - TRUCK DRIVERS ( tkpd-drivers-api ) 
+# API OBJECTIVE - TRUCK DRIVERS
 ----------------------------
 
 ![Diagram](diagrams/diagram_tkpd.png)
