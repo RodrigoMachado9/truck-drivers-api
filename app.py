@@ -32,8 +32,9 @@ from blacklist import BLACKLIST
 
 
 app = Flask(__name__)
-#todo sqlite -> é possivel alterar para postgres
-app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///case_truck.db'
+
+#todo sqlite -> migration to postgres
+app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///dummy.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['JWT_SECRET_KEY'] = 'hellotruck'
 app.config['JWT_BLACKLIST_ENABLED'] = True

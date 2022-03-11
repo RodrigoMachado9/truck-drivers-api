@@ -27,7 +27,7 @@ class Users(Resource):
     """
 
     def get(self):
-        connection = sqlite3.connect('case_truck.db')
+        connection = sqlite3.connect('dummy.db')
         cursor = connection.cursor()
 
         # todo;

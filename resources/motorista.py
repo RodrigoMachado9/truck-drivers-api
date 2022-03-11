@@ -20,7 +20,7 @@ class CaminhoneirosDisponiveis(Resource):
     """
 
     def get(self):
-        connection = sqlite3.connect('case_truck.db')
+        connection = sqlite3.connect('dummy.db')
         cursor = connection.cursor()
 
         # todo; top caminhoneiros
@@ -51,7 +51,7 @@ class CaminhoneiroAvaliacao(Resource):
     Mostrar os top 10 caminhoneiros.
     """
     def get(self):
-        connection = sqlite3.connect('case_truck.db')
+        connection = sqlite3.connect('dummy.db')
         cursor = connection.cursor()
 
         # todo; top caminhoneiros
@@ -75,7 +75,7 @@ class CaminhoneirosOrigemDestino(Resource):
     Mostrar uma lista de origem e destino agrupado por cada um dos tipos.
     """
     def get(self):
-        connection = sqlite3.connect('case_truck.db')
+        connection = sqlite3.connect('dummy.db')
         cursor = connection.cursor()
 
         #todo; hehe
@@ -99,7 +99,7 @@ class CaminhoneirosVeiculoProprio(Resource):
     Precisamos saber quantos caminhoneiros tem veiculo próprio.
     """
     def get(self):
-        connection = sqlite3.connect('case_truck.db')
+        connection = sqlite3.connect('dummy.db')
         cursor = connection.cursor()
 
         #todo; hehe
@@ -120,7 +120,7 @@ class MotoristasLocalCarga(Resource):
     que não tem carga para voltar ao seu destino de origem
     """
     def get(self):
-        connection = sqlite3.connect('case_truck.db')
+        connection = sqlite3.connect('dummy.db')
         cursor = connection.cursor()
 
         #todo; hehe
