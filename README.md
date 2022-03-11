@@ -2,7 +2,12 @@
 # API OBJECTIVE - TRUCK DRIVERS
 ----------------------------
 
-![Diagram](diagrams/diagram_tkpd.png)
+
+<p align="center">
+    <img 
+align="center" 
+alt="" height="300" width="850" src="https://media.istockphoto.com/photos/gold-truck-in-black-background-3d-rendering-picture-id1166912511?k=20&m=1166912511&s=170667a&w=0&h=XkjTzWEe5HWODL5KdteLo_QBfe3BxVmCXa0-tCA90J4="/>
+</p>
 
 
    The purpose of this API will be to improve the truck driver's experience when using certain services.
