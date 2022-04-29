@@ -58,77 +58,53 @@ def token_de_acesso_invalidado():
     return jsonify({"message":"You have been logged out!"}), 401  # unauthorized
 
 
-#todo; [1] endpoint filter
+#routes ...
 api.add_resource(MotoristasLocalCarga, '/motoristas/local_carga/motoristas_sem_carga')
 
-#todo; [2] endpoint filter
 api.add_resource(CaminhoneirosVeiculoProprio, '/motoristas/motoristas_com_veiculo_proprio')
 
-#todo; [3] endpoint filter
 api.add_resource(CaminhoneirosOrigemDestino, '/motoristas/local_carga/veiculo/origem_destino')
 
-#todo; [4] endpoint filter
 api.add_resource(CaminhoneiroAvaliacao, '/motoristas/top_motoristas')
 
-#todo; [5] endpoint filter
 api.add_resource(CaminhoneirosDisponiveis, '/motoristas/status_veiculo/motoristas_disponiveis')
 
-
-#todo; endpoint
 api.add_resource(Motoristas, '/motoristas')
 
-#todo; endpoint 1
 api.add_resource(Motorista, '/motorista/<int:motorista_id>')
 
-#todo; endpoint 2
 api.add_resource(Users, '/usuarios')
+
 api.add_resource(User, '/usuarios/<int:user_id>')
 
-#todo; endpoint 3
 api.add_resource(UserRegister, '/cadastro')
 
-#todo; endpoint 4
 api.add_resource(UserLogin, '/login')
 
-#todo; endpoint 5
 api.add_resource(UserLogout, '/logout')
 
-#todo; endpoint 6
 api.add_resource(TipoVeiculos, '/tipo_veiculos')
 
-#todo; endpoint 7
 api.add_resource(TipoVeiculo, '/tipo_veiculo/<int:tipo_veiculo_id>')
 
-#todo; endpoint 8
 api.add_resource(Veiculos, '/veiculos')
 
-#todo; endpoint 9
 api.add_resource(Veiculo, '/veiculo/<int:veiculo_id>')
 
-#todo; endpoint 10
 api.add_resource(Status, '/status')
 
-#todo; endpoint 11
 api.add_resource(StatusVeiculo, '/status_veiculo/<int:status_id>')
 
-
-#todo; endpoint 12
 api.add_resource(Cargas, '/cargas')
 
-#todo; endpoint 13
 api.add_resource(Carga, '/carga/<int:carga_id>')
 
-
-#todo; endpoint 14
 api.add_resource(LocalCargas, '/local_cargas')
 
-#todo; endpoint 15
 api.add_resource(LocalCarga, '/local_carga/<int:local_carga_id>')
 
-#todo; endpoint 16
 api.add_resource(Transportes, '/transportes')
 
-#todo; endpoint 17
 api.add_resource(Transporte, '/transporte/<int:transporte_id>')
 
 
