@@ -10,7 +10,8 @@ __credits__ = ["Python is life", "Live the opensource world"]
 from flask import Flask, jsonify
 from flask_restful import Api
 #todo; resources
-from resources.motorista import Motoristas, Motorista, MotoristasLocalCarga, CaminhoneirosVeiculoProprio, CaminhoneirosOrigemDestino, CaminhoneiroAvaliacao, CaminhoneirosDisponiveis
+from resources.motorista import Motoristas, Motorista, MotoristasLocalCarga, CaminhoneirosVeiculoProprio, \
+CaminhoneirosOrigemDestino, CaminhoneiroAvaliacao, CaminhoneirosDisponiveis
 
 from resources.usuario import User, UserRegister, UserLogin, UserLogout, Users
 from resources.tipoveiculo import TipoVeiculos, TipoVeiculo
