@@ -30,7 +30,6 @@ class CargaModel(banco.Model):
         self.transporte_id = transporte_id
 
 
-    #todo função que retornar o meu objeto em formato json !
     def json(self):
 
         return {
