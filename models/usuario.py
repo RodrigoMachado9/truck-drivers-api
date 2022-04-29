@@ -22,7 +22,6 @@ class UserModel(banco.Model):
         self.login = login
         self.senha = senha
 
-    #todo função que retornar o meu objeto em formato json !
     def json(self):
         return {
             'user_id':self.user_id,
