@@ -50,7 +50,6 @@ class VeiculoModel(banco.Model):
         self.motorista_id = motorista_id
 
 
-    #todo função que retornar o meu objeto em formato json !
     def json(self):
         return {
             'veiculo_id':self.veiculo_id,
