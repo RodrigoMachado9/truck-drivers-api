@@ -43,7 +43,6 @@ class LocalCargaModel(banco.Model):
         self.motorista_id = motorista_id
 
 
-    #todo função que retornar o meu objeto em formato json !
     def json(self):
         return {
             'local_carga_id':self.local_carga_id,
