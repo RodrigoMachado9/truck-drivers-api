@@ -47,7 +47,6 @@ class MotoristaModel(banco.Model):
         self.possueveiculoproprio = possueveiculoproprio
 
 
-    #todo função que retornar o meu objeto em formato json !
     def json(self):
         return {
             'motorista_id':self.motorista_id,
