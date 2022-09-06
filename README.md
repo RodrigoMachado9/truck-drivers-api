@@ -115,7 +115,6 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
             
 Body[raw, Json]
 
-Body:
 {
 	"driver_id": 1,
         "name": "Fulano",
@@ -145,8 +144,6 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
             
 Body[raw, Json]
 
-
-Body:
 {
     "driver_without_shipments": [
         {
@@ -170,7 +167,6 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
             
 Body[raw, Json]
 
-Body:
 {
     "truck_drivers_with_own_vehicle": [
         {
@@ -191,7 +187,7 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
             
 Body[raw, Json]
 
-Body:{
+{
     "truck_drivers_origin_destination": [
         {
             "name": "Rodrigo Machado",
@@ -213,7 +209,7 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
             
 Body[raw, Json]
 
-Body:{
+{
 
     "available_truck_drivers": [
         {
@@ -242,7 +238,7 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
             
 Body[raw, Json]
 
-Body:{
+{
 
     "top_truckers": [
         {
@@ -269,8 +265,7 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
             
 Body[raw, Json]
 
-
-Body:{
+{
 
     "truck_drivers": [
         {
@@ -414,7 +409,7 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
             
 Body[raw, Json]
 
-Body:{
+{
     "shipments": [
         {
             "shipment_id": 1,
@@ -435,7 +430,7 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
             
 Body[raw, Json]
 
-Body:{
+{
 
     "transport": [
         {
@@ -467,7 +462,7 @@ Body[raw, Json]
 
 ```
 ```json
-Body:{
+{
     "load_location": [
         {
             "location_id": 1,
@@ -510,7 +505,7 @@ Body[raw, Json]
 
 ```
 ```json
-Body:{
+{
     "vehicle_status": [
         {
             "status_id": 1,
@@ -532,7 +527,7 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
             
 Body[raw, Json]
 
-Body:{
+{
     "vehicle_type": [
         {
             "vehicle_type_id": 1,
@@ -569,8 +564,8 @@ Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
             
 Body[raw, Json]
 
-Body:
-   {
+
+{
     "users": [
         {
             "id": 1,
