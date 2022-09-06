@@ -107,7 +107,7 @@ __Method:__ GET
 Postman settings:
 
 ```bash
-Headers:{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
+{ KEY: Content-Type, Authorization:{Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to}
          VALUE: application/json }
             
 {
@@ -134,7 +134,7 @@ __Method:__ GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
             
 
 {
@@ -155,7 +155,7 @@ __Method:__ GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
             
 
 {
@@ -173,7 +173,7 @@ __Method:__ GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
             
 
 {
@@ -193,7 +193,7 @@ __Method:__ GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
             
 
 {
@@ -220,7 +220,7 @@ __Method:__ GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
             
 
 {
@@ -245,7 +245,7 @@ __Method:__ GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
 
 {
 
@@ -386,7 +386,7 @@ __Método:__: GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
 
 
 {
@@ -405,7 +405,7 @@ __Método:__: GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
             
 {
 
@@ -432,7 +432,7 @@ __Método:__: GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
             
 
 ```
@@ -473,7 +473,7 @@ __Método:__: GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
             
 
 ```
@@ -495,7 +495,7 @@ __Método:__: GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
             
 
 {
@@ -530,7 +530,7 @@ __Método:__: GET
 Postman settings:
 
 ```bash
-Headers:{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
+{ "Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjI4NjYxMTksIm5iZiI6MTU2Mjg2NjExOSwianRpIjoiNjViZDE2YTMtODMwZS00YmVlLTg3NWYtOGY1N2VjMGEwZGNlIiwiZXhwIjoxNTYyODY3MDE5LCJpZGVudGl0eSI6MSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.mH1SoPbevZV0R2V1mg9vlfA_x9QkhlCe60t-Oyt07to"}
             
 
 {
