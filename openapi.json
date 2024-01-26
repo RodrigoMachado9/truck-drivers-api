@@ -1,0 +1,56 @@
+{
+  "openapi": "3.0.0",
+  "components": {
+    "schemas": {
+      "PutDocumentRequest": {
+        "properties": {
+          "SomeObject": {
+            "type": "object",
+            "properties": {
+              "SomeAttribute": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {}
+  },
+  "info": {
+    "title": "",
+    "description": "",
+    "version": "72004659-2c9c-4b73-ae1a-62407f84baa6"
+  },
+  "paths": {
+    "/flavors": {
+      "get": {
+        "operationId": "iaas_read_flavor",
+        "summary": "Create User",
+        "description": "Creates a user and then sends a generated password email",
+        "responses": {
+          "201": {
+            "description": "A user object along with generated API Keys",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PutDocumentResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "An error message when creating a new user",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
